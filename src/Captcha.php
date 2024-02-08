@@ -348,6 +348,7 @@ class Captcha
 
         $this->session->put('captcha', [
             'sensitive' => $this->sensitive,
+            'captchakey' => $key,
             'key' => $hash,
             'encrypt' => $this->encrypt
         ]);
